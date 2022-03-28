@@ -1,0 +1,5 @@
+file1 = open('file1.txt', 'r')
+data1 = set(file1.read().split())
+file2 = open('file2.txt', 'r')
+data2 = set(file2.read().split())
+print(f'Слова, входящие в оба файла - {data1 & data2}, уникальные слова - {(data1 - data2) | (data2 - data1)}')
